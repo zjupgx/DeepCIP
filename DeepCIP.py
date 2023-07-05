@@ -169,6 +169,8 @@ def DeepCIP_predict():
         ires_labels.append(ires_label)
 
     out_dir = './results'
+    if not os.path.exists(out_dir):
+        os.mkdir(out_dir)
     out_name = args.input_file.split('/')[-1].split('.')[0]
     outfile = f'{out_dir}/{out_name}_mode_{args.mode}.csv'
 
