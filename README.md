@@ -63,7 +63,7 @@ optional arguments:
   -h, --help           show this help message and exit
   -n , --data_name     The name of your input dataset.
   -i , --input_file    Input file for prediction. (*.fasta or *.fa file)
-  -b , --batch_size    Batch size. (default=16) "--bs 16" means every 32 sampels constitute a prediction batch. This parameter affects the speed and results of the prediction. The larger the batch size, the faster the prediction, as far as your machine allows. (If the lengths of your input sequences vary greatly, it is recommended that you do not use a large batch size, or you can put sequences of similar lengths together for prediction)
+  -b , --batch_size    Batch size. (default=16) "--bs 16" means every 16 sampels constitute a prediction batch. This parameter affects the speed and results of the prediction. The larger the batch size, the faster the prediction, as far as your machine allows. (If the lengths of your input sequences vary greatly, it is recommended that you do not use a large batch size, or you can put sequences of similar lengths together for prediction)
   -c , --cut_off       Prediction threshold. (default=0.5)
   -m , --mode          The mode of prediction. (default=0) mode 0: Prediction directly on the input sequence. mode 1: The input sequence is partitioned by length w and interval s, and then the partitioned sequence is predicted. (w and s can be set by --w and --s, respectively)
                        mode 2:
